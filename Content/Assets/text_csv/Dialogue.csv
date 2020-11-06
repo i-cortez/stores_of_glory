@@ -1,0 +1,10 @@
+,NPC_ID,Conversation_ID,Line_ID,Dialogue
+1,1,1,1,Umm excuse me!
+2,1,1,2,Where is your bathroom?
+3,2,1,1,Hi. You guys have this item priced for $99.99.
+4,2,1,2,But they are selling it on Amazon for way cheaper.
+5,3,1,1,I need to ask of you a favor.
+6,3,1,2,"I'm looking for this item, but I can't find it."
+7,3,1,3,Will you go and find it for me? Thanks.
+8,3,2,1,That took a long time. Thanks for keeping me waiting!
+9,4,1,1,I've been waiting for you!
