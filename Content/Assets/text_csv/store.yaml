@@ -1,0 +1,118 @@
+Title: Stores of Glory
+
+Start: Greeting
+
+Scenes:
+  
+  Greeting:
+    
+    Caption: The first customer of the day comes up to greet you, "Well hey there, what are you doing up so early?"
+    
+    Stress: none
+
+    Choices:
+    
+      - Text: Trying not to kill myself
+        Target: Annoyed
+      - Text: I work this shift all the time (Smile)
+        Target: Pleased
+  
+  Annoyed:
+
+    Caption: "Oh, yeah, I get that, I'll get out of your hair then."
+
+    Stress: up
+
+    Choices:
+      - Text: Smile, and wave the customer goodbye
+        Target: Greeting02
+  
+  Pleased:
+
+    Caption: "Well thats not so bad then, im glad to see another person enjoying their day."
+
+    Stress: down
+
+    Choices:
+      - Text: Smile, and wave the customer goodbye
+        Target: Greeting02
+  
+  Greeting02:
+
+    Caption: Your last customer of the day approaches your checkstand with 2 carts full to the brim.  "Well howdy there, workin hard or hardly workin?"
+
+    Stress: down
+
+    Choices:
+      - Text: Smile, and say "Hardly workin"
+        Target: Kys
+      - Text: Give a halfhearted chuckle as you start running up the rediculous order.
+        Target: Neutral
+      - Text: Glance at the customer, and get to the order so you can leave.
+        Target: Quick
+
+  Kys:
+
+    Caption: The customer chuckles as you turn off the light abbove the register to deter any more people from coming into your line.
+
+    Stress: up
+
+    Choices:
+      - Text: Make small talk as you work on the order
+        Target: Talkative customer
+      - Text: Work on the order silently so you can focus and get out faster
+        Target: Silent customer
+    
+  Neutral:
+
+    Caption: The customer smiles politely as you turn off the light abbove the register to deter any more people from coming into your line.
+
+    Stress: none
+
+    Choices:
+      - Text: Make small talk as you work on the order
+        Stress: none
+        Target: Talkative customer
+      - Text: Work on the order silently so you can focus and get out faster
+        Target: Silent customer
+
+  Quick:
+
+    Caption: The customer silently starts putting groceries on the belt as you turn off the light abbove the register to deter any more people from coming into your line.
+
+    Stress: down
+
+    Choices:
+      - Text: Make small talk as you work on the order
+        Target: Talkative customer
+      - Text: Work on the order silently so you can focus and get out faster
+        Target: Silent customer
+
+  Talkative customer:
+    Caption: The order does take a little while since you have to keep up with the convorsation while taking care of the order, but in the end you get through it, and notice there is an option for the customer to submit a review on the reciept.
+
+    Stress: down
+
+    Choices:
+      - Text: Hand the customer their recipt and wave them goodbye
+        Target: End
+      - Text: Tell the customer about the survey on the reciept, then wave them goodbye.
+        Target: End
+
+  Silent customer:
+    Caption: You are able to speed through the order, and notice when it is done there is an option for the customer to submit a review on the reciept.
+
+    Stress: up
+
+    Choices:
+      - Text: Hand the customer their recipt and wave them goodbye
+        Target: End
+      - Text: Tell the customer about the survey on the reciept, then wave them goodbye.
+        Target: End
+
+  End:
+    Caption: The customer smiles and says goodbye, leaving you free to go and clock out.
+
+    Stress: down
+
+    Choices: []
